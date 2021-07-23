@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}<title>Search</title>{% endblock %}
+
+{% block content %}
+    <div class="container" style="text-align: center">
+        <h1>Hello, Django search</h1>
+        {% for p in post %}
+            <li><a href="posts/{{p.id}}">{{ p.title }}</a></li>
+        {% endfor %}
+    </div>
+{% endblock %}
