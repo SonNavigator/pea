@@ -10,7 +10,6 @@ class Author(models.Model):
         return self.name
 
 
-# Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=80)
     body = models.TextField()
